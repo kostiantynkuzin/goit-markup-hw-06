@@ -602,6 +602,17 @@ img {
   padding: 12px 16px 12px 16px;
   resize: none;
 }
+.user-field {
+  margin-bottom: 20px;
+}
+.check-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
 .personal-info {
   display: block;
   align-items: center;
