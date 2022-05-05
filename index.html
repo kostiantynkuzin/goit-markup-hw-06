@@ -417,9 +417,47 @@
       <div class="modal">
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
-          <input type="text" class="modal-input" placeholder="введите имя" required name="name" />
-          <input type="tel" class="modal-input" placeholder="введите телефон" required name="tel" />
-          <input type="mail" class="modal-input" placeholder="введите емайл" required name="mail" />
+          <div class="modal-field">
+            <label class="modal-label" for="user-name">Имя</label>
+            <div class="modal-input-wrap">
+              <input type="text" class="modal-input" required name="user-name" />
+              <svg class="input-icon">
+                <use
+                  href="./images/symbol-defs (1).svg#icon-Vector"
+                  width="12px"
+                  height="12px"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="tel">Телефон</label>
+            <div class="modal-input-wrap">
+              <input type="tel" class="modal-input" required name="tel" />
+              <svg class="input-icon">
+                <use href="./images/symbol-defs (1).svg#icon-tel" width="12px" height="12px"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="mail">Почта</label>
+            <div class="modal-input-wrap">
+              <input type="mail" class="modal-input" required name="mail" />
+              <svg class="input-icon">
+                <use href="./images/symbol-defs (1).svg#icon-mail" width="12px" height="12px"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-text" class="modal-label">Комментарий</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              placeholder="Введите текст"
+              class="modal-text"
+            ></textarea>
+          </div>
+          <div></div>
           <button type="submit" class="modal-btn">Отправить</button>
         </form>
         <button data-modal-close type="button" class="modal-close-btn">
