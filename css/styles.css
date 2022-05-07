@@ -539,7 +539,6 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #212121;
   margin-bottom: 12px;
 }
@@ -548,8 +547,7 @@ img {
 }
 .modal-input {
   width: 100%;
-  height: 100%;
-
+  height: 40px;
   padding: 11px 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -579,6 +577,7 @@ img {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: var(--accent-color);
 }
 .modal-label {
   font-weight: 400;
@@ -605,14 +604,31 @@ img {
 .user-field {
   margin-bottom: 20px;
 }
+
 .check-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check-text span {
+  width: 16px;
+  height: 15px;
+  color: var(--title-color);
+  border-radius: 4px;
+  display: flex;
+  margin-right: 7px;
 }
 
+.input-check:checked + .check-text span {
+  background-image: url(..//images/icon\ check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
 .personal-info {
   display: block;
   align-items: center;
