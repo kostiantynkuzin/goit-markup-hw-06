@@ -462,6 +462,7 @@ img {
 .soc-network {
   display: inline-block;
   margin-left: 70px;
+  margin-right: 93px;
 }
 .soc-title {
   font-size: 14px;
@@ -498,6 +499,47 @@ img {
 .soc-icon {
   fill: var(--primary-white-color);
 }
+.subscribe-form {
+  display: flex;
+}
+.subscribe-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.subscribe-input {
+  min-width: 358px;
+  min-height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-right: 12px;
+  background: #2f303a;
+  outline: none;
+}
+.subscribe-btn {
+  min-width: 200px;
+  min-height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: var(--accent-color);
+  outline: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 29px;
+}
+
 /*-----------------------------------------------modal-container-------------------------------------------*/
 .backdrop {
   position: fixed;
@@ -531,8 +573,16 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: #000000;
+  cursor: pointer;
   background-color: var(--primary-white-color);
+  transition: fill 250ms;
+  outline: none;
 }
+.modal-close-btn:focus,
+.modal-close-btn:hover {
+  fill: var(--accent-color);
+}
+
 .modal-title {
   font-weight: 700;
   font-size: 20px;
@@ -619,6 +669,7 @@ img {
   height: 15px;
   border: 2px solid var(--title-color);
   border-radius: 3px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-right: 7px;
 }
 .input-check:checked + .check-text::before {
@@ -627,11 +678,18 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  box-shadow: none;
 }
+
 .check-link {
   color: var(--accent-color);
   outline: none;
 }
+.check-link:hover,
+.check-link:focus {
+  color: var(--accent-color);
+}
+
 .modal-btn-wrap {
   position: relative;
 }
@@ -646,11 +704,16 @@ img {
   border-radius: 4px;
   border-color: var(--accent-color);
   outline: none;
+  cursor: pointer;
   padding: 10px 55px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%);
+}
+.modal-btn:focus,
+.modal-btn:hover {
+  border-color: var(--accent-color);
 }
 .personal-info {
   display: block;
@@ -662,13 +725,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.modal-close-btn {
-  transition: fill 250ms;
-  outline: none;
-}
-.modal-close-btn:hover {
-  fill: var(--accent-color);
-}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
