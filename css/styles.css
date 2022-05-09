@@ -521,6 +521,11 @@ img {
   background: #2f303a;
   outline: none;
 }
+.subscribe-input:focus {
+  border-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .subscribe-btn {
   min-width: 200px;
   min-height: 50px;
@@ -538,6 +543,12 @@ img {
   align-items: center;
   text-align: center;
   padding: 10px 29px;
+  cursor: pointer;
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----------------------------------------------modal-container-------------------------------------------*/
@@ -581,6 +592,8 @@ img {
 .modal-close-btn:focus,
 .modal-close-btn:hover {
   fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -609,9 +622,13 @@ img {
 }
 .modal-input:focus {
   border-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus + .input-icon {
   fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-icon {
   position: absolute;
@@ -646,7 +663,10 @@ img {
 }
 .modal-text:focus {
   border-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .user-field {
   margin-bottom: 20px;
 }
@@ -688,6 +708,8 @@ img {
 .check-link:hover,
 .check-link:focus {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-wrap {
@@ -714,7 +736,10 @@ img {
 .modal-btn:focus,
 .modal-btn:hover {
   border-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .personal-info {
   display: block;
   align-items: center;

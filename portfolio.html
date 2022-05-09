@@ -283,7 +283,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+   <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-adress">
@@ -342,7 +342,17 @@
               </li>
             </ul>
           </div>
-        </div>
+           <div class="subscribe">
+            <p class="subscribe-title">Подпишитесь на рассылку</p>
+            <form class="subscribe-form">
+              <label for="mail"></label>
+              <input type="email" class="subscribe-input" name="mail" id="mail" placeholder="E-mail" required/>
+              <button type="submit" class="subscribe-btn">Подписаться 
+                 <svg class="submit-icon" width="24" height="24">
+                    <use href="./images/symbol-defs (1).svg#icon-footer-mail"></use>
+                  </svg>
+              </button>
+        </form>
       </div>
     </footer>
   </body>
